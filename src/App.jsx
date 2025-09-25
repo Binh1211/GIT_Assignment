@@ -4,7 +4,16 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  return <></>;
+  const [mes, setMes] = useState("");
+  const handleClick = () => {
+    setMes("Xin Chào");
+  };
+  return (
+    <>
+      <button onClick={() => handleClick()}>Click me</button>
+      <p>{mes}</p>
+    </>
+  );
 }
 
 export default App;
